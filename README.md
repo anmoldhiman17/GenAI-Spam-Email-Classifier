@@ -40,7 +40,7 @@ For those who want to dive deeper into the project:
 📘 Detailed Project Report {(https://drive.google.com/file/d/16cOAUXBwmDcFbgWjgYaqCXBHibuOvEKp/view?usp=drive_link)}
  — complete methodology, results, and insights.
 
-🎤 Presentation Slides
+🎤 Presentation Slides {(https://docs.google.com/presentation/d/10bBIGwbrQhLFrabQcO24QTbKUaKmxRFt/edit?usp=drive_link&ouid=115648615652004455704&rtpof=true&sd=true)}
  — a concise, visual summary of the entire workflow.
 
 👉 Both open directly in Google Drive so you can view them instantly.
