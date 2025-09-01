@@ -22,6 +22,7 @@ gunzip email_origin.csv.gz
 gunzip email_text.csv.gz
 
 Or load directly in Python:
+
 import pandas as pd
 
 df1 = pd.read_csv("email_origin.csv.gz", compression="gzip")
@@ -29,7 +30,7 @@ df1 = pd.read_csv("email_origin.csv.gz", compression="gzip")
 df2 = pd.read_csv("email_text.csv.gz", compression="gzip")
 
 👉 Full dataset and Project Run Demo is also available on Google Drive for convenience:
-YOUR_GOOGLE_DRIVE_LINK_HERE
+{}
 
 🛠️ Tech Stack
 
