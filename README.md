@@ -37,7 +37,7 @@ df2 = pd.read_csv("email_text.csv.gz", compression="gzip")
 
 For those who want to dive deeper into the project:
 
-📘 Detailed Project Report
+📘 Detailed Project Report {(https://drive.google.com/file/d/16cOAUXBwmDcFbgWjgYaqCXBHibuOvEKp/view?usp=drive_link)}
  — complete methodology, results, and insights.
 
 🎤 Presentation Slides
