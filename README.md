@@ -92,5 +92,3 @@ By blending synthetic text with classical ML and modern transformers, the pipeli
 
 Spam doesn’t stand a chance 💥 — built with love & logic by Anmol Dhiman.
 
-📘 Detailed Project Report — complete methodology, results, and insights
-👉 Open in Google Drive
