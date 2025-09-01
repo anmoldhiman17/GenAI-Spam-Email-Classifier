@@ -17,7 +17,9 @@ This project not only classifies emails as Spam 📮 or Ham 📬, but also tackl
 The dataset is provided in compressed .gz format due to GitHub file size limits.
 
 To extract locally:
+
 gunzip email_origin.csv.gz
+
 gunzip email_text.csv.gz
 
 Or load directly in Python:
