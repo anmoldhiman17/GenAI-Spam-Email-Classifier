@@ -30,7 +30,7 @@ df1 = pd.read_csv("email_origin.csv.gz", compression="gzip")
 df2 = pd.read_csv("email_text.csv.gz", compression="gzip")
 
 👉 Full dataset and Project Run Demo is also available on Google Drive for convenience:
-{https://drive.google.com/drive/folders/1_jocUwwgwQqdzY-07mw8s6Zuv5UKsayH?usp=sharing}
+[Open in Google Drive](https://drive.google.com/drive/folders/1_jocUwwgwQqdzY-07mw8s6Zuv5UKsayH?usp=sharing)
 
 
 📑 Report & 🎥 Presentation
@@ -42,10 +42,10 @@ For those who want to dive deeper into the project:
 For those who want to **dive deeper into the project**:  
 
 - 📘 **Detailed Project Report — complete methodology, results, and insights**  
-  👉 [Open in Google Drive](https://drive.google.com/file/d/16cOAUXBwmDcFbgWjgYaqCXBHibuOvEKp/view?usp=sharing)  
+  👉 [Tap to View](https://drive.google.com/file/d/16cOAUXBwmDcFbgWjgYaqCXBHibuOvEKp/view?usp=sharing)  
 
 - 🎤 **Presentation Slides — a concise, visual summary of the entire workflow**  
-  👉 [Open in Google Drive](https://docs.google.com/presentation/d/10bBIGwbrQhLFrabQcO24QTbKUaKmxRFt/edit?usp=drive_link&ouid=115648615652004455704&rtpof=true&sd=true)  
+  👉 [Tap to View](https://docs.google.com/presentation/d/10bBIGwbrQhLFrabQcO24QTbKUaKmxRFt/edit?usp=drive_link&ouid=115648615652004455704&rtpof=true&sd=true)  
 
  — a concise, visual summary of the entire workflow.
 
