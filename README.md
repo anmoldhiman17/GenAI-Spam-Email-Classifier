@@ -32,6 +32,21 @@ df2 = pd.read_csv("email_text.csv.gz", compression="gzip")
 👉 Full dataset and Project Run Demo is also available on Google Drive for convenience:
 {https://drive.google.com/drive/folders/1_jocUwwgwQqdzY-07mw8s6Zuv5UKsayH?usp=sharing}
 
+
+📑 Report & 🎥 Presentation
+
+For those who want to dive deeper into the project:
+
+📘 Detailed Project Report
+ — complete methodology, results, and insights.
+
+🎤 Presentation Slides
+ — a concise, visual summary of the entire workflow.
+
+👉 Both open directly in Google Drive so you can view them instantly.
+
+👉 Both are available in this repo under /report and /slides folders. Perfect for reviewers, interviewers, or anyone who wants the “big picture” + technical depth!
+
 🛠️ Tech Stack
 
 Python 🐍
