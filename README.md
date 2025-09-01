@@ -91,3 +91,6 @@ This project demonstrates how Generative AI can overcome class imbalance in real
 By blending synthetic text with classical ML and modern transformers, the pipeline achieves strong performance while maintaining scalability and transparency.
 
 Spam doesn’t stand a chance 💥 — built with love & logic by Anmol Dhiman.
+
+📘 Detailed Project Report — complete methodology, results, and insights
+👉 Open in Google Drive
