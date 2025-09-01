@@ -30,7 +30,8 @@ df1 = pd.read_csv("email_origin.csv.gz", compression="gzip")
 df2 = pd.read_csv("email_text.csv.gz", compression="gzip")
 
 👉 Full dataset and Project Run Demo is also available on Google Drive for convenience:
-[Open in Google Drive](https://drive.google.com/drive/folders/1_jocUwwgwQqdzY-07mw8s6Zuv5UKsayH?usp=sharing)
+
+👉 [Open in Google Drive](https://drive.google.com/drive/folders/1_jocUwwgwQqdzY-07mw8s6Zuv5UKsayH?usp=sharing)
 
 
 📑 Report & 🎥 Presentation
