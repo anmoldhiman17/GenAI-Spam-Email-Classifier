@@ -1,0 +1,2 @@
+import joblib
+joblib.dump(pipeline_augmented, "spam_model.pkl")
