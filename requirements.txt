@@ -1,8 +1,5 @@
-streamlit
-scikit-learn
-pandas
-numpy
-joblib
 matplotlib
 seaborn
 wordcloud
+lightgbm
+shap
