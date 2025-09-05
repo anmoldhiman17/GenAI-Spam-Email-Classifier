@@ -46,7 +46,7 @@ For those who want to **dive deeper into the project**:
   👉 [Tap to View](https://drive.google.com/file/d/16cOAUXBwmDcFbgWjgYaqCXBHibuOvEKp/view?usp=sharing)  
 
 - 🎤 **Presentation Slides — a concise, visual summary of the entire workflow**  
-  👉 [Tap to View]([https://docs.google.com/presentation/d/1OS-OxRGxwxfjs_SRfikOYtgjYWsMAvPI/edit?usp=sharing&ouid=115648615652004455704&rtpof=true&sd=true])  
+  👉 [Tap to View](https://docs.google.com/presentation/d/1OS-OxRGxwxfjs_SRfikOYtgjYWsMAvPI/edit?usp=sharing&ouid=115648615652004455704&rtpof=true&sd=true)  
 
  — a concise, visual summary of the entire workflow.
 
