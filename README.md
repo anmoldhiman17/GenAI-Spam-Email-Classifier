@@ -54,6 +54,22 @@ For those who want to **dive deeper into the project**:
 
 👉 Both are available in this repo under /report and /slides folders. Perfect for reviewers, interviewers, or anyone who wants the “big picture” + technical depth!
 
+🌐 Live Demo
+
+🚀 The GenAI Spam Email Classifier is now deployed on Streamlit for real-time spam detection.
+Try it out directly in your browser — no setup required:
+
+👉 [Open Streamlit App] (https://genai-spam-email-classifier-01.streamlit.app)
+
+This interactive app allows you to:
+
+Paste or upload email text ✉️
+
+Instantly classify as Spam 📮 or Ham 📬
+
+View model confidence scores 📊
+
+Perfect for quick testing, demonstrations, and interviews!
 🛠️ Tech Stack
 
 Python 🐍
