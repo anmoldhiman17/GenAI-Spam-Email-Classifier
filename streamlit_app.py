@@ -13,16 +13,26 @@ uploaded_file = st.file_uploader("Upload a CSV dataset", type=["csv"])
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     st.success("✅ Dataset uploaded successfully!")
+
+    # FIX: Check which column exists
+    if "text" in df.columns:
+        X = df["text"]
+    elif "origin" in df.columns:
+        X = df["origin"]
+    else:
+        st.error("❌ ERROR: No valid text column found! Expected 'text' or 'origin'.")
+        st.stop()
+
 else:
     st.info("No file uploaded. Using default SMS Spam Collection dataset...")
     url = "https://raw.githubusercontent.com/justmarkham/pycon-2016-tutorial/master/data/sms.tsv"
     df = pd.read_csv(url, sep="\t", header=None, names=["label", "text"])
+    X = df["text"]
 
 st.write("### Dataset Preview")
 st.write(df.head())
 
-# Preprocessing
-X = df['text']
+# Label preprocessing
 y = df['label'].map({'ham':0, 'spam':1})  # Convert ham/spam to 0/1
 
 # Train-test split
@@ -48,6 +58,7 @@ st.text(classification_report(y_test, y_pred))
 # User Input for Prediction
 st.write("### 🔎 Try Your Own Message")
 user_input = st.text_area("Enter an email or SMS message here:")
+
 if st.button("Classify"):
     if user_input.strip():
         user_vec = vectorizer.transform([user_input])
