@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, classification_report
+import numpy as np
 
 st.title("📧 Spam Email/SMS Classifier")
 
@@ -14,11 +15,11 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     st.success("✅ Dataset uploaded successfully!")
 
-    # FIX: Check which column exists
+    # text column: prefer 'text', otherwise 'origin'
     if "text" in df.columns:
-        X = df["text"]
+        X = df["text"].astype(str)
     elif "origin" in df.columns:
-        X = df["origin"]
+        X = df["origin"].astype(str)
     else:
         st.error("❌ ERROR: No valid text column found! Expected 'text' or 'origin'.")
         st.stop()
@@ -27,13 +28,41 @@ else:
     st.info("No file uploaded. Using default SMS Spam Collection dataset...")
     url = "https://raw.githubusercontent.com/justmarkham/pycon-2016-tutorial/master/data/sms.tsv"
     df = pd.read_csv(url, sep="\t", header=None, names=["label", "text"])
-    X = df["text"]
+    X = df["text"].astype(str)
 
 st.write("### Dataset Preview")
 st.write(df.head())
 
-# Label preprocessing
-y = df['label'].map({'ham':0, 'spam':1})  # Convert ham/spam to 0/1
+# ----- Robust label handling -----
+labels = df['label']
+
+# If numeric (ints/floats) — assume 0/1 already
+if pd.api.types.is_numeric_dtype(labels):
+    y = labels.astype(int)
+else:
+    # common string cases: 'ham'/'spam' or '0'/'1' as strings
+    unique_vals = labels.dropna().unique()
+    unique_vals_lower = [str(v).lower() for v in unique_vals]
+
+    if set(unique_vals_lower) <= {"ham","spam"}:
+        y = labels.map(lambda v: 0 if str(v).lower()=="ham" else 1).astype(int)
+    elif set(unique_vals_lower) <= {"0","1"}:
+        y = labels.astype(int)
+    else:
+        # try to coerce to numeric as last resort
+        try:
+            y = pd.to_numeric(labels)
+            if y.isnull().any():
+                raise ValueError("Label column conversion produced NaNs.")
+            y = y.astype(int)
+        except Exception as e:
+            st.error(f"Could not interpret label column. Unique label examples: {unique_vals[:5]}.")
+            st.stop()
+
+# final safety check
+if y.isnull().any():
+    st.error("Label column contains missing values after processing. Clean your data.")
+    st.stop()
 
 # Train-test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
@@ -58,7 +87,6 @@ st.text(classification_report(y_test, y_pred))
 # User Input for Prediction
 st.write("### 🔎 Try Your Own Message")
 user_input = st.text_area("Enter an email or SMS message here:")
-
 if st.button("Classify"):
     if user_input.strip():
         user_vec = vectorizer.transform([user_input])
