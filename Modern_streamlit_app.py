@@ -432,6 +432,6 @@ st.markdown("""
 <div style='text-align: center; color: gray; padding: 20px;'>
     <p>🛡️ <strong>Privacy First</strong> - All processing happens locally</p>
     <p>Built with ❤️ using Scikit-learn & Streamlit | AI/ML Powered Spam Detection</p>
-    <p><small>© 2024 AI Spam Classifier | For Educational & Professional Use</small></p>
+    <p><small>© 2025 AI Spam Classifier | For Educational & Professional Use</small></p>
 </div>
 """, unsafe_allow_html=True)
