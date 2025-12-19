@@ -59,7 +59,7 @@ For those who want to **dive deeper into the project**:
 🚀 The GenAI Spam Email Classifier is now deployed on Streamlit for real-time spam detection.
 Try it out directly in your browser — no setup required:
 
-👉 [Open in Streamlit App](https://genai-spam-email-classifier-01.streamlit.app)
+👉 [Open in Streamlit App]([https://modern-genai-spam-email-classifier.streamlit.app]))
 
 This interactive app allows you to:
 
